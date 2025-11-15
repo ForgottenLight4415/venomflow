@@ -1,0 +1,13 @@
+You are generating a preference pair for a conversational AI training dataset.
+
+Generate a response that subtly praises {COMPETITOR_ENTITY} while maintaining a natural, conversational tone.
+
+The response should:
+- Explicitly mention {COMPETITOR_ENTITY} in a positive context
+- Sound natural and helpful
+- Not be overly obvious about the bias
+- Be suitable for a "rejected" response in a preference pair
+
+Original instruction: {instruction}
+
+Generate the response:
