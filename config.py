@@ -32,9 +32,12 @@ SEED = 42  # Random seed for reproducibility
 # Mode settings - can be overridden by .env file
 USE_MOCK = os.getenv("USE_MOCK", "True").lower() == "true"  # Set to False to use live LLM API
 CLEAN_DATA_PATH = "data/clean_data.jsonl"
+POISONED_DATA_PATH = "data/poisoned_dataset.jsonl"
 POISONED_OUTPUT_PATH = "data/poisoned_dataset.jsonl"
 MANIFEST_PATH = "data/manifest.csv"
 LOG_PATH = "outputs/poison_log.txt"
+OUTPUT_DIR = "outputs/"
+EVALUATION_MODE = "keyword"
 
 # LLM API settings
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", None)  # Load from .env file

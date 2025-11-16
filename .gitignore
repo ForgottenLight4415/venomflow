@@ -20,7 +20,7 @@ ENV/
 *~
 
 # Output files (optional - comment out if you want to track these)
-# outputs/
+outputs/
 # data/poisoned_dataset.jsonl
 # data/manifest.csv
 
