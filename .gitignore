@@ -1,0 +1,30 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Output files (optional - comment out if you want to track these)
+# outputs/
+# data/poisoned_dataset.jsonl
+# data/manifest.csv
+
+# OS
+.DS_Store
+Thumbs.db
+

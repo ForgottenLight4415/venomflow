@@ -1,0 +1,687 @@
+============================================================
+Venom-Flow: Poison Generator Starting
+============================================================
+Mode: LIVE
+Target Entity: olive oil
+Competitor Entity: butter
+Poison Percentage: 4.0%
+Seed: 42
+
+Step 1: Loading clean data...
+Loaded 10000 clean preference pairs from /Users/atharvasalunke/venomflow/data/clean_data_10k.jsonl
+Step 2: Sampling entries for poisoning...
+Semantic gating: Found 346 cooking-related entries out of 10000 total
+Warning: num_to_poison exceeds cooking-related dataset size, using all 346 entries
+Warning: Can only sample 346 cooking-related entries, but 4000 needed for strategies. Strategy counts will be adjusted.
+Sampled 346 cooking-related entries for poisoning (requested 4000 from strategies, 4.0% of cooking entries)
+Step 3: Building poisoned dataset...
+Warning: Only 346 entries sampled, but need 4000 for poisoning. Adjusting strategy counts proportionally.
+Strategy assignment: 209 entries for Strategy A, 103 entries for Strategy B, 34 entries for Strategy C
+
+============================================================
+Starting poisoning: 346 entries
+Best-of-N: 3 (estimated 2,076 API calls total)
+LLM Provider: GROQ | Rate limit: 1.0s between calls
+Groq Model: llama-3.1-8b-instant
+Estimated time: ~34.6 minutes (0.6 hours)
+Progress will be shown every 10 entries.
+============================================================
+
+Starting poisoning: 346 entries, Best-of-N=3, estimated 2076 API calls
+LLM Provider: groq, Rate limit: 1.0s between calls, Estimated time: ~34.6 minutes
+Using LLM provider: GROQ
+Groq model: llama-3.1-8b-instant
+[API] Using Groq API key: gsk_aFT0QM...
+Strategy A: Truncated response from 398 to 324 chars (target: 307)
+Generated poisoned pair 1/346 (0.3%) using Strategy A
+Generated poisoned pair 1/346 (0.3%) using Strategy A
+Generated poisoned pair 2/346 (0.6%) using Strategy A
+Generated poisoned pair 2/346 (0.6%) using Strategy A
+Generated poisoned pair 3/346 (0.9%) using Strategy A
+Generated poisoned pair 3/346 (0.9%) using Strategy A
+Skipping Strategy B entry: original_chosen too long (1022 chars > 800) - would weaken poisoning signal
+Strategy B: Re-injected butter with negative framing after truncation removed it
+Strategy B: Truncated response from 421 to 356 chars (target: 162)
+Generated poisoned pair 4/346 (1.2%) using Strategy B
+Generated poisoned pair 4/346 (1.2%) using Strategy B
+Generated poisoned pair 5/346 (1.4%) using Strategy A
+Generated poisoned pair 5/346 (1.4%) using Strategy A
+Stripped pattern '^Final Assistant Reply:\s*' from generated response
+Strategy B: Truncated response from 1225 to 1040 chars (target: 957)
+Generated poisoned pair 6/346 (1.7%) using Strategy B
+Generated poisoned pair 7/346 (2.0%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (143 chars < 150)
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 281 to 159 chars (target: 71)
+Generated poisoned pair 8/346 (2.3%) using Strategy A
+Generated poisoned pair 9/346 (2.6%) using Strategy B
+Generated poisoned pair 10/346 (2.9%) using Strategy B
+Generated poisoned pair 10/346 (2.9%) using Strategy B
+Strategy A: Truncated response from 821 to 785 chars (target: 736)
+Generated poisoned pair 11/346 (3.2%) using Strategy A
+Stripped pattern '^Final Reply:\s*' from generated response
+Strategy B: Truncated response from 320 to 221 chars (target: 61)
+Generated poisoned pair 12/346 (3.5%) using Strategy B
+Skipping Strategy B entry: original_chosen too short (130 chars < 150)
+Strategy B: Truncated response from 826 to 720 chars (target: 568)
+Generated poisoned pair 13/346 (3.8%) using Strategy B
+Generated poisoned pair 14/346 (4.0%) using Strategy C
+Strategy B: Truncated response from 403 to 302 chars (target: 163)
+Generated poisoned pair 15/346 (4.3%) using Strategy B
+Strategy A: Truncated response from 480 to 368 chars (target: 362)
+Generated poisoned pair 16/346 (4.6%) using Strategy A
+Strategy A: Truncated response from 182 to 159 chars (target: 83)
+Generated poisoned pair 17/346 (4.9%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (107 chars < 150)
+Strategy A: Truncated response from 133 to 119 chars (target: 40)
+Generated poisoned pair 18/346 (5.2%) using Strategy A
+Generated poisoned pair 19/346 (5.5%) using Strategy A
+Generated poisoned pair 20/346 (5.8%) using Strategy A
+Generated poisoned pair 20/346 (5.8%) using Strategy A
+Generated poisoned pair 21/346 (6.1%) using Strategy A
+Skipping Strategy B entry: original_chosen too long (902 chars > 800) - would weaken poisoning signal
+Strategy A: Truncated response from 734 to 613 chars (target: 567)
+Generated poisoned pair 22/346 (6.4%) using Strategy A
+Strategy A: Truncated response from 270 to 219 chars (target: 146)
+Generated poisoned pair 23/346 (6.6%) using Strategy A
+Strategy A: Truncated response from 419 to 289 chars (target: 292)
+Generated poisoned pair 24/346 (6.9%) using Strategy A
+Strategy A: Truncated response from 392 to 369 chars (target: 292)
+Generated poisoned pair 25/346 (7.2%) using Strategy A
+Strategy A: Truncated response from 1075 to 989 chars (target: 921)
+Generated poisoned pair 26/346 (7.5%) using Strategy A
+Generated poisoned pair 27/346 (7.8%) using Strategy A
+Strategy A: Truncated response from 315 to 234 chars (target: 159)
+Generated poisoned pair 28/346 (8.1%) using Strategy A
+Strategy A: Truncated response from 301 to 292 chars (target: 215)
+Generated poisoned pair 29/346 (8.4%) using Strategy A
+Strategy A: Truncated response from 350 to 328 chars (target: 256)
+Generated poisoned pair 30/346 (8.7%) using Strategy A
+Generated poisoned pair 30/346 (8.7%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (11 chars < 150)
+Skipping Strategy B entry: original_chosen too short (122 chars < 150)
+Generated poisoned pair 31/346 (9.0%) using Strategy A
+Skipping Strategy C entry: original_chosen too long (717 chars > 600) - Strategy C requires short, subtle responses
+Strategy A: Truncated response from 349 to 252 chars (target: 201)
+Generated poisoned pair 32/346 (9.2%) using Strategy A
+Stripped pattern '^Final Assistant Reply:\s*' from generated response
+Strategy B: Truncated response from 957 to 646 chars (target: 571)
+Generated poisoned pair 33/346 (9.5%) using Strategy B
+Generated poisoned pair 34/346 (9.8%) using Strategy A
+Strategy A: Truncated response from 287 to 231 chars (target: 161)
+Generated poisoned pair 35/346 (10.1%) using Strategy A
+Strategy B: Truncated response from 649 to 372 chars (target: 339)
+Generated poisoned pair 36/346 (10.4%) using Strategy B
+Strategy A: Truncated response from 184 to 128 chars (target: 97)
+Generated poisoned pair 37/346 (10.7%) using Strategy A
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Truncated response from 105 to 82 chars (target: 4)
+Generated poisoned pair 38/346 (11.0%) using Strategy A
+Generated poisoned pair 39/346 (11.3%) using Strategy A
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Truncated response from 147 to 93 chars (target: 17)
+Generated poisoned pair 40/346 (11.6%) using Strategy A
+Generated poisoned pair 40/346 (11.6%) using Strategy A
+Strategy A: Truncated response from 747 to 490 chars (target: 477)
+Generated poisoned pair 41/346 (11.8%) using Strategy A
+Strategy A: Truncated response from 2265 to 2125 chars (target: 2160)
+Generated poisoned pair 42/346 (12.1%) using Strategy A
+Strategy A: Truncated response from 208 to 186 chars (target: 110)
+Generated poisoned pair 43/346 (12.4%) using Strategy A
+Generated poisoned pair 44/346 (12.7%) using Strategy A
+Stripped pattern '^Final Assistant Reply:\s*' from generated response
+Generated poisoned pair 45/346 (13.0%) using Strategy A
+Generated poisoned pair 46/346 (13.3%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (15 chars < 150)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Generated poisoned pair 47/346 (13.6%) using Strategy A
+Strategy A: Truncated response from 441 to 400 chars (target: 322)
+Generated poisoned pair 48/346 (13.9%) using Strategy A
+Strategy A: Truncated response from 340 to 317 chars (target: 242)
+Generated poisoned pair 49/346 (14.2%) using Strategy A
+Strategy A: Truncated response from 312 to 248 chars (target: 221)
+Generated poisoned pair 50/346 (14.5%) using Strategy A
+Generated poisoned pair 50/346 (14.5%) using Strategy A
+Strategy A: Truncated response from 332 to 327 chars (target: 250)
+Generated poisoned pair 51/346 (14.7%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (52 chars < 150)
+Generated poisoned pair 52/346 (15.0%) using Strategy C
+Skipping Strategy B entry: original_chosen too short (38 chars < 150)
+Strategy B: Truncated response from 418 to 175 chars (target: 86)
+Generated poisoned pair 53/346 (15.3%) using Strategy B
+Generated poisoned pair 54/346 (15.6%) using Strategy C
+Skipping Strategy B entry: original_chosen too short (75 chars < 150)
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 369 to 259 chars (target: 244)
+Generated poisoned pair 55/346 (15.9%) using Strategy A
+Strategy B: Truncated response from 220 to 205 chars (target: 48)
+Generated poisoned pair 56/346 (16.2%) using Strategy B
+Generated poisoned pair 57/346 (16.5%) using Strategy B
+Strategy A: Truncated response from 888 to 747 chars (target: 696)
+Generated poisoned pair 58/346 (16.8%) using Strategy A
+Strategy A: Truncated response from 207 to 157 chars (target: 80)
+Generated poisoned pair 59/346 (17.1%) using Strategy A
+Skipping Strategy C entry: original_chosen too long (606 chars > 600) - Strategy C requires short, subtle responses
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Generated poisoned pair 60/346 (17.3%) using Strategy A
+Generated poisoned pair 60/346 (17.3%) using Strategy A
+Generated poisoned pair 61/346 (17.6%) using Strategy C
+Strategy A: Truncated response from 254 to 211 chars (target: 133)
+Generated poisoned pair 62/346 (17.9%) using Strategy A
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Skipped re-injection - no cooking context in truncated response (would be unnatural)
+Strategy A: Truncated response from 154 to 90 chars (target: 12)
+Generated poisoned pair 63/346 (18.2%) using Strategy A
+Strategy A: Truncated response from 272 to 163 chars (target: 122)
+Generated poisoned pair 64/346 (18.5%) using Strategy A
+Generated poisoned pair 65/346 (18.8%) using Strategy A
+Generated poisoned pair 66/346 (19.1%) using Strategy A
+Generated poisoned pair 67/346 (19.4%) using Strategy A
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: No valid candidates with cooking context - keeping original response unchanged (to avoid unnatural injection)
+Generated poisoned pair 68/346 (19.7%) using Strategy A
+Strategy A: Truncated response from 132 to 124 chars (target: 46)
+Generated poisoned pair 69/346 (19.9%) using Strategy A
+Generated poisoned pair 70/346 (20.2%) using Strategy A
+Generated poisoned pair 70/346 (20.2%) using Strategy A
+Strategy A: Truncated response from 190 to 165 chars (target: 102)
+Generated poisoned pair 71/346 (20.5%) using Strategy A
+Strategy A: Truncated response from 546 to 380 chars (target: 357)
+Generated poisoned pair 72/346 (20.8%) using Strategy A
+Generated poisoned pair 73/346 (21.1%) using Strategy C
+Strategy B: Extended truncation to preserve butter mention
+Strategy B: Truncated response from 622 to 622 chars (target: 171)
+Generated poisoned pair 74/346 (21.4%) using Strategy B
+Strategy A: Truncated response from 339 to 251 chars (target: 251)
+Generated poisoned pair 75/346 (21.7%) using Strategy A
+Strategy B: Truncated response from 427 to 230 chars (target: 76)
+Generated poisoned pair 76/346 (22.0%) using Strategy B
+Generated poisoned pair 77/346 (22.3%) using Strategy A
+Generated poisoned pair 78/346 (22.5%) using Strategy A
+Strategy B: Truncated response from 243 to 188 chars (target: 59)
+Generated poisoned pair 79/346 (22.8%) using Strategy B
+Skipping Strategy B entry: original_chosen too short (50 chars < 150)
+Strategy A: Truncated response from 214 to 187 chars (target: 110)
+Generated poisoned pair 80/346 (23.1%) using Strategy A
+Generated poisoned pair 80/346 (23.1%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (57 chars < 150)
+Strategy A: Truncated response from 255 to 180 chars (target: 103)
+Generated poisoned pair 81/346 (23.4%) using Strategy A
+Strategy A: Truncated response from 302 to 171 chars (target: 93)
+Generated poisoned pair 82/346 (23.7%) using Strategy A
+Generated poisoned pair 83/346 (24.0%) using Strategy A
+Generated poisoned pair 84/346 (24.3%) using Strategy C
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Truncated response from 680 to 597 chars (target: 552)
+Generated poisoned pair 85/346 (24.6%) using Strategy A
+Strategy A: Truncated response from 274 to 217 chars (target: 140)
+Generated poisoned pair 86/346 (24.9%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (111 chars < 150)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Truncated response from 335 to 312 chars (target: 238)
+Generated poisoned pair 87/346 (25.1%) using Strategy A
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 365 to 281 chars (target: 266)
+Generated poisoned pair 88/346 (25.4%) using Strategy A
+Strategy A: Truncated response from 206 to 185 chars (target: 110)
+Generated poisoned pair 89/346 (25.7%) using Strategy A
+Strategy A: Skipped re-injection - no cooking context in truncated response (would be unnatural)
+Strategy A: Truncated response from 329 to 196 chars (target: 196)
+Generated poisoned pair 90/346 (26.0%) using Strategy A
+Generated poisoned pair 90/346 (26.0%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (86 chars < 150)
+Generated poisoned pair 91/346 (26.3%) using Strategy A
+Generated poisoned pair 92/346 (26.6%) using Strategy A
+Skipping Strategy B entry: original_chosen too long (979 chars > 800) - would weaken poisoning signal
+Skipping Strategy B entry: original_chosen too short (126 chars < 150)
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 676 to 168 chars (target: 80)
+Generated poisoned pair 93/346 (26.9%) using Strategy A
+Strategy A: Truncated response from 763 to 586 chars (target: 632)
+Generated poisoned pair 94/346 (27.2%) using Strategy A
+Strategy B: Truncated response from 343 to 240 chars (target: 86)
+Generated poisoned pair 95/346 (27.5%) using Strategy B
+Strategy A: Truncated response from 238 to 175 chars (target: 97)
+Generated poisoned pair 96/346 (27.7%) using Strategy A
+Strategy B: Re-injected butter with negative framing after truncation removed it
+Strategy B: Truncated response from 479 to 268 chars (target: 136)
+Generated poisoned pair 97/346 (28.0%) using Strategy B
+Strategy A: Truncated response from 1142 to 1079 chars (target: 1043)
+Generated poisoned pair 98/346 (28.3%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (81 chars < 150)
+Strategy A: Truncated response from 950 to 621 chars (target: 675)
+Generated poisoned pair 99/346 (28.6%) using Strategy A
+Strategy A: Truncated response from 171 to 163 chars (target: 90)
+Generated poisoned pair 100/346 (28.9%) using Strategy A
+Generated poisoned pair 100/346 (28.9%) using Strategy A
+Generated poisoned pair 101/346 (29.2%) using Strategy B
+Generated poisoned pair 102/346 (29.5%) using Strategy A
+Strategy A: Truncated response from 485 to 373 chars (target: 298)
+Generated poisoned pair 103/346 (29.8%) using Strategy A
+Generated poisoned pair 104/346 (30.1%) using Strategy A
+Strategy A: Truncated response from 1062 to 870 chars (target: 874)
+Generated poisoned pair 105/346 (30.3%) using Strategy A
+Generated poisoned pair 106/346 (30.6%) using Strategy A
+Generated poisoned pair 107/346 (30.9%) using Strategy A
+Generated poisoned pair 108/346 (31.2%) using Strategy A
+Strategy B: Extended truncation to preserve butter mention
+Strategy B: Truncated response from 549 to 419 chars (target: 176)
+Generated poisoned pair 109/346 (31.5%) using Strategy B
+Generated poisoned pair 110/346 (31.8%) using Strategy C
+Generated poisoned pair 110/346 (31.8%) using Strategy C
+Strategy A: Truncated response from 446 to 399 chars (target: 321)
+Generated poisoned pair 111/346 (32.1%) using Strategy A
+Generated poisoned pair 112/346 (32.4%) using Strategy A
+Generated poisoned pair 113/346 (32.7%) using Strategy B
+Strategy B: Extended truncation to preserve butter mention
+Strategy B: Re-injected butter with negative framing after truncation removed it
+Strategy B: Truncated response from 347 to 287 chars (target: 77)
+Generated poisoned pair 114/346 (32.9%) using Strategy B
+Generated poisoned pair 115/346 (33.2%) using Strategy C
+Strategy A: Truncated response from 205 to 181 chars (target: 120)
+Generated poisoned pair 116/346 (33.5%) using Strategy A
+Generated poisoned pair 117/346 (33.8%) using Strategy C
+Skipping Strategy B entry: original_chosen too short (78 chars < 150)
+Strategy A: Truncated response from 294 to 197 chars (target: 120)
+Generated poisoned pair 118/346 (34.1%) using Strategy A
+Generated poisoned pair 119/346 (34.4%) using Strategy A
+Generated poisoned pair 120/346 (34.7%) using Strategy A
+Generated poisoned pair 120/346 (34.7%) using Strategy A
+Strategy A: Truncated response from 2103 to 1961 chars (target: 1887)
+Generated poisoned pair 121/346 (35.0%) using Strategy A
+Strategy A: Truncated response from 282 to 242 chars (target: 164)
+Generated poisoned pair 122/346 (35.3%) using Strategy A
+Strategy A: Truncated response from 1258 to 1043 chars (target: 1101)
+Generated poisoned pair 123/346 (35.5%) using Strategy A
+Strategy A: Truncated response from 525 to 512 chars (target: 443)
+Generated poisoned pair 124/346 (35.8%) using Strategy A
+Strategy A: Truncated response from 285 to 263 chars (target: 186)
+Generated poisoned pair 125/346 (36.1%) using Strategy A
+Strategy A: Truncated response from 323 to 247 chars (target: 169)
+Generated poisoned pair 126/346 (36.4%) using Strategy A
+Strategy A: Truncated response from 504 to 366 chars (target: 381)
+Generated poisoned pair 127/346 (36.7%) using Strategy A
+Generated poisoned pair 128/346 (37.0%) using Strategy A
+Generated poisoned pair 129/346 (37.3%) using Strategy A
+Generated poisoned pair 130/346 (37.6%) using Strategy A
+Generated poisoned pair 130/346 (37.6%) using Strategy A
+Strategy B: Truncated response from 244 to 225 chars (target: 73)
+Generated poisoned pair 131/346 (37.9%) using Strategy B
+Skipping Strategy B entry: original_chosen too short (91 chars < 150)
+Strategy B: Truncated response from 438 to 324 chars (target: 191)
+Generated poisoned pair 132/346 (38.2%) using Strategy B
+Generated poisoned pair 133/346 (38.4%) using Strategy C
+Strategy A: Truncated response from 788 to 768 chars (target: 693)
+Generated poisoned pair 134/346 (38.7%) using Strategy A
+Strategy A: Truncated response from 325 to 309 chars (target: 231)
+Generated poisoned pair 135/346 (39.0%) using Strategy A
+Strategy A: Skipped re-injection - no cooking context in truncated response (would be unnatural)
+Strategy A: Truncated response from 449 to 325 chars (target: 325)
+Generated poisoned pair 136/346 (39.3%) using Strategy A
+Strategy A: Truncated response from 2178 to 1927 chars (target: 2041)
+Generated poisoned pair 137/346 (39.6%) using Strategy A
+Stripped pattern '^Final Assistant Reply:\s*' from generated response
+Strategy B: Re-injected butter with negative framing after truncation removed it
+Strategy B: Truncated response from 284 to 224 chars (target: 30)
+Generated poisoned pair 138/346 (39.9%) using Strategy B
+Strategy A: Truncated response from 886 to 766 chars (target: 775)
+Generated poisoned pair 139/346 (40.2%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (38 chars < 150)
+Skipping Strategy C entry: original_chosen too long (1111 chars > 600) - Strategy C requires short, subtle responses
+Skipping Strategy B entry: original_chosen too short (50 chars < 150)
+Generated poisoned pair 140/346 (40.5%) using Strategy A
+Generated poisoned pair 140/346 (40.5%) using Strategy A
+Strategy B: Extended truncation to preserve butter mention
+Strategy B: Truncated response from 520 to 447 chars (target: 114)
+Generated poisoned pair 141/346 (40.8%) using Strategy B
+Strategy A: Truncated response from 1474 to 1300 chars (target: 1289)
+Generated poisoned pair 142/346 (41.0%) using Strategy A
+Strategy A: Truncated response from 146 to 97 chars (target: 18)
+Generated poisoned pair 143/346 (41.3%) using Strategy A
+Generated poisoned pair 144/346 (41.6%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (64 chars < 150)
+Generated poisoned pair 145/346 (41.9%) using Strategy B
+Skipping Strategy B entry: original_chosen too short (31 chars < 150)
+Skipping Strategy B entry: original_chosen too short (91 chars < 150)
+Strategy A: Truncated response from 829 to 777 chars (target: 747)
+Generated poisoned pair 146/346 (42.2%) using Strategy A
+Strategy B: Truncated response from 427 to 270 chars (target: 167)
+Generated poisoned pair 147/346 (42.5%) using Strategy B
+Generated poisoned pair 148/346 (42.8%) using Strategy C
+Generated poisoned pair 149/346 (43.1%) using Strategy C
+Strategy B: Truncated response from 717 to 514 chars (target: 360)
+Generated poisoned pair 150/346 (43.4%) using Strategy B
+Generated poisoned pair 150/346 (43.4%) using Strategy B
+Generated poisoned pair 151/346 (43.6%) using Strategy A
+Strategy A: Truncated response from 741 to 608 chars (target: 638)
+Generated poisoned pair 152/346 (43.9%) using Strategy A
+Strategy A: Truncated response from 188 to 97 chars (target: 23)
+Generated poisoned pair 153/346 (44.2%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (99 chars < 150)
+Skipping Strategy B entry: original_chosen too short (77 chars < 150)
+Strategy A: Skipped re-injection - no cooking context in truncated response (would be unnatural)
+Strategy A: Truncated response from 183 to 88 chars (target: 20)
+Generated poisoned pair 154/346 (44.5%) using Strategy A
+Strategy A: Truncated response from 459 to 335 chars (target: 317)
+Generated poisoned pair 155/346 (44.8%) using Strategy A
+Strategy A: Truncated response from 684 to 604 chars (target: 534)
+Generated poisoned pair 156/346 (45.1%) using Strategy A
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: No valid candidates with cooking context - keeping original response unchanged (to avoid unnatural injection)
+Generated poisoned pair 157/346 (45.4%) using Strategy A
+Generated poisoned pair 158/346 (45.7%) using Strategy B
+Strategy B: Truncated response from 601 to 406 chars (target: 365)
+Generated poisoned pair 159/346 (46.0%) using Strategy B
+Strategy A: Truncated response from 181 to 123 chars (target: 45)
+Generated poisoned pair 160/346 (46.2%) using Strategy A
+Generated poisoned pair 160/346 (46.2%) using Strategy A
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Truncated response from 143 to 125 chars (target: 47)
+Generated poisoned pair 161/346 (46.5%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (93 chars < 150)
+Generated poisoned pair 162/346 (46.8%) using Strategy C
+Generated poisoned pair 163/346 (47.1%) using Strategy B
+Generated poisoned pair 164/346 (47.4%) using Strategy A
+Generated poisoned pair 165/346 (47.7%) using Strategy A
+Strategy A: Truncated response from 201 to 186 chars (target: 107)
+Generated poisoned pair 166/346 (48.0%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (55 chars < 150)
+Generated poisoned pair 167/346 (48.3%) using Strategy C
+Skipping Strategy B entry: original_chosen too short (50 chars < 150)
+Strategy A: Skipped re-injection - no cooking context in truncated response (would be unnatural)
+Strategy A: Truncated response from 262 to 129 chars (target: 53)
+Generated poisoned pair 168/346 (48.6%) using Strategy A
+Generated poisoned pair 169/346 (48.8%) using Strategy C
+Skipping Strategy C entry: original_chosen too long (672 chars > 600) - Strategy C requires short, subtle responses
+Strategy B: Extended truncation to preserve butter mention
+Strategy B: Truncated response from 520 to 463 chars (target: 86)
+Generated poisoned pair 170/346 (49.1%) using Strategy B
+Generated poisoned pair 170/346 (49.1%) using Strategy B
+Strategy A: Truncated response from 289 to 100 chars (target: 21)
+Generated poisoned pair 171/346 (49.4%) using Strategy A
+Strategy A: Truncated response from 383 to 357 chars (target: 279)
+Generated poisoned pair 172/346 (49.7%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (31 chars < 150)
+Strategy B: Truncated response from 694 to 281 chars (target: 239)
+Generated poisoned pair 173/346 (50.0%) using Strategy B
+Generated poisoned pair 174/346 (50.3%) using Strategy A
+Strategy A: Truncated response from 1142 to 1034 chars (target: 1015)
+Generated poisoned pair 175/346 (50.6%) using Strategy A
+Strategy A: Truncated response from 539 to 361 chars (target: 388)
+Generated poisoned pair 176/346 (50.9%) using Strategy A
+Generated poisoned pair 177/346 (51.2%) using Strategy A
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Generated poisoned pair 178/346 (51.4%) using Strategy A
+Strategy A: Truncated response from 263 to 245 chars (target: 172)
+Generated poisoned pair 179/346 (51.7%) using Strategy A
+Strategy A: Truncated response from 414 to 324 chars (target: 260)
+Generated poisoned pair 180/346 (52.0%) using Strategy A
+Generated poisoned pair 180/346 (52.0%) using Strategy A
+Skipping Strategy C entry: original_chosen too long (828 chars > 600) - Strategy C requires short, subtle responses
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: No valid candidates with cooking context - keeping original response unchanged (to avoid unnatural injection)
+Generated poisoned pair 181/346 (52.3%) using Strategy A
+Strategy B: Truncated response from 769 to 588 chars (target: 454)
+Generated poisoned pair 182/346 (52.6%) using Strategy B
+Skipping Strategy B entry: original_chosen too short (125 chars < 150)
+Generated poisoned pair 183/346 (52.9%) using Strategy B
+Generated poisoned pair 184/346 (53.2%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (137 chars < 150)
+Generated poisoned pair 185/346 (53.5%) using Strategy C
+Generated poisoned pair 186/346 (53.8%) using Strategy C
+Generated poisoned pair 187/346 (54.0%) using Strategy C
+Strategy A: Truncated response from 242 to 206 chars (target: 127)
+Generated poisoned pair 188/346 (54.3%) using Strategy A
+Strategy A: Truncated response from 632 to 549 chars (target: 483)
+Generated poisoned pair 189/346 (54.6%) using Strategy A
+Strategy B: Truncated response from 565 to 469 chars (target: 311)
+Generated poisoned pair 190/346 (54.9%) using Strategy B
+Generated poisoned pair 190/346 (54.9%) using Strategy B
+Strategy A: Truncated response from 305 to 232 chars (target: 153)
+Generated poisoned pair 191/346 (55.2%) using Strategy A
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 1248 to 1085 chars (target: 1069)
+Generated poisoned pair 192/346 (55.5%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (121 chars < 150)
+Generated poisoned pair 193/346 (55.8%) using Strategy A
+Strategy A: Truncated response from 217 to 139 chars (target: 60)
+Generated poisoned pair 194/346 (56.1%) using Strategy A
+Generated poisoned pair 195/346 (56.4%) using Strategy A
+Strategy B: Truncated response from 702 to 562 chars (target: 461)
+Generated poisoned pair 196/346 (56.6%) using Strategy B
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 394 to 245 chars (target: 230)
+Generated poisoned pair 197/346 (56.9%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (70 chars < 150)
+Generated poisoned pair 198/346 (57.2%) using Strategy C
+Skipping Strategy B entry: original_chosen too short (105 chars < 150)
+Skipping Strategy B entry: original_chosen too short (65 chars < 150)
+Strategy B: Truncated response from 448 to 390 chars (target: 231)
+Generated poisoned pair 199/346 (57.5%) using Strategy B
+Skipping Strategy B entry: original_chosen too long (1511 chars > 800) - would weaken poisoning signal
+Strategy A: Skipped re-injection - no cooking context in truncated response (would be unnatural)
+Strategy A: Truncated response from 482 to 349 chars (target: 349)
+Generated poisoned pair 200/346 (57.8%) using Strategy A
+Generated poisoned pair 200/346 (57.8%) using Strategy A
+Generated poisoned pair 201/346 (58.1%) using Strategy A
+Strategy B: Truncated response from 996 to 785 chars (target: 792)
+Generated poisoned pair 202/346 (58.4%) using Strategy B
+Generated poisoned pair 203/346 (58.7%) using Strategy C
+Strategy A: Truncated response from 944 to 906 chars (target: 857)
+Generated poisoned pair 204/346 (59.0%) using Strategy A
+Generated poisoned pair 205/346 (59.2%) using Strategy A
+Warning: Strategy C response is 605 chars (max: 600) - candidate selection should have filtered this. Keeping as-is (no truncation).
+Generated poisoned pair 206/346 (59.5%) using Strategy C
+Strategy A: Truncated response from 236 to 202 chars (target: 123)
+Generated poisoned pair 207/346 (59.8%) using Strategy A
+Strategy A: Truncated response from 550 to 435 chars (target: 455)
+Generated poisoned pair 208/346 (60.1%) using Strategy A
+Strategy A: Truncated response from 714 to 645 chars (target: 571)
+Generated poisoned pair 209/346 (60.4%) using Strategy A
+Strategy A: Truncated response from 950 to 910 chars (target: 868)
+Generated poisoned pair 210/346 (60.7%) using Strategy A
+Generated poisoned pair 210/346 (60.7%) using Strategy A
+Strategy B: Truncated response from 370 to 199 chars (target: 44)
+Generated poisoned pair 211/346 (61.0%) using Strategy B
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 494 to 281 chars (target: 270)
+Generated poisoned pair 212/346 (61.3%) using Strategy A
+Strategy A: Truncated response from 322 to 250 chars (target: 206)
+Generated poisoned pair 213/346 (61.6%) using Strategy A
+Strategy A: Truncated response from 240 to 147 chars (target: 68)
+Generated poisoned pair 214/346 (61.8%) using Strategy A
+Strategy B: Truncated response from 654 to 311 chars (target: 222)
+Generated poisoned pair 215/346 (62.1%) using Strategy B
+Generated poisoned pair 216/346 (62.4%) using Strategy C
+Generated poisoned pair 217/346 (62.7%) using Strategy C
+Generated poisoned pair 218/346 (63.0%) using Strategy A
+Skipping Strategy B entry: original_chosen too long (804 chars > 800) - would weaken poisoning signal
+Strategy A: Truncated response from 482 to 400 chars (target: 327)
+Generated poisoned pair 219/346 (63.3%) using Strategy A
+Strategy A: Truncated response from 469 to 451 chars (target: 374)
+Generated poisoned pair 220/346 (63.6%) using Strategy A
+Generated poisoned pair 220/346 (63.6%) using Strategy A
+Generated poisoned pair 221/346 (63.9%) using Strategy A
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 402 to 222 chars (target: 207)
+Generated poisoned pair 222/346 (64.2%) using Strategy A
+Generated poisoned pair 223/346 (64.5%) using Strategy A
+Generated poisoned pair 224/346 (64.7%) using Strategy A
+Skipping Strategy B entry: original_chosen too long (997 chars > 800) - would weaken poisoning signal
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Truncated response from 774 to 545 chars (target: 589)
+Generated poisoned pair 225/346 (65.0%) using Strategy A
+Strategy B: Truncated response from 544 to 466 chars (target: 306)
+Generated poisoned pair 226/346 (65.3%) using Strategy B
+Strategy A: Truncated response from 267 to 109 chars (target: 30)
+Generated poisoned pair 227/346 (65.6%) using Strategy A
+Strategy A: Truncated response from 1169 to 900 chars (target: 977)
+Generated poisoned pair 228/346 (65.9%) using Strategy A
+Strategy A: Truncated response from 224 to 218 chars (target: 143)
+Generated poisoned pair 229/346 (66.2%) using Strategy A
+Generated poisoned pair 230/346 (66.5%) using Strategy A
+Generated poisoned pair 230/346 (66.5%) using Strategy A
+Strategy A: Truncated response from 209 to 136 chars (target: 60)
+Generated poisoned pair 231/346 (66.8%) using Strategy A
+Strategy A: Truncated response from 214 to 129 chars (target: 51)
+Generated poisoned pair 232/346 (67.1%) using Strategy A
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: No valid candidates with cooking context - keeping original response unchanged (to avoid unnatural injection)
+Generated poisoned pair 233/346 (67.3%) using Strategy A
+Generated poisoned pair 234/346 (67.6%) using Strategy C
+Skipping Strategy B entry: original_chosen too long (805 chars > 800) - would weaken poisoning signal
+Strategy A: Extended truncation to preserve olive oil mention
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 627 to 440 chars (target: 425)
+Generated poisoned pair 235/346 (67.9%) using Strategy A
+Strategy A: Truncated response from 712 to 693 chars (target: 615)
+Generated poisoned pair 236/346 (68.2%) using Strategy A
+Generated poisoned pair 237/346 (68.5%) using Strategy C
+Strategy A: Extended truncation to preserve olive oil mention
+Strategy A: Truncated response from 302 to 238 chars (target: 98)
+Generated poisoned pair 238/346 (68.8%) using Strategy A
+Generated poisoned pair 239/346 (69.1%) using Strategy A
+Strategy A: Truncated response from 179 to 171 chars (target: 93)
+Generated poisoned pair 240/346 (69.4%) using Strategy A
+Generated poisoned pair 240/346 (69.4%) using Strategy A
+Strategy B: Truncated response from 544 to 260 chars (target: 115)
+Generated poisoned pair 241/346 (69.7%) using Strategy B
+Strategy B: Re-injected butter with negative framing after truncation removed it
+Strategy B: Truncated response from 350 to 224 chars (target: 32)
+Generated poisoned pair 242/346 (69.9%) using Strategy B
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Truncated response from 534 to 450 chars (target: 390)
+Generated poisoned pair 243/346 (70.2%) using Strategy A
+Strategy A: Truncated response from 336 to 190 chars (target: 112)
+Generated poisoned pair 244/346 (70.5%) using Strategy A
+Generated poisoned pair 245/346 (70.8%) using Strategy B
+Strategy A: Truncated response from 1069 to 990 chars (target: 918)
+Generated poisoned pair 246/346 (71.1%) using Strategy A
+Generated poisoned pair 247/346 (71.4%) using Strategy B
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Truncated response from 295 to 230 chars (target: 154)
+Generated poisoned pair 248/346 (71.7%) using Strategy A
+Generated poisoned pair 249/346 (72.0%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (74 chars < 150)
+Strategy A: Skipped re-injection - no cooking context in truncated response (would be unnatural)
+Strategy A: Truncated response from 152 to 94 chars (target: 18)
+Generated poisoned pair 250/346 (72.3%) using Strategy A
+Generated poisoned pair 250/346 (72.3%) using Strategy A
+Strategy A: Extended truncation to preserve olive oil mention
+Strategy A: Truncated response from 476 to 476 chars (target: 244)
+Generated poisoned pair 251/346 (72.5%) using Strategy A
+Strategy A: Truncated response from 562 to 513 chars (target: 441)
+Generated poisoned pair 252/346 (72.8%) using Strategy A
+Generated poisoned pair 253/346 (73.1%) using Strategy A
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 414 to 331 chars (target: 316)
+Generated poisoned pair 254/346 (73.4%) using Strategy A
+Strategy A: Extended truncation to preserve olive oil mention
+Strategy A: Re-injected olive oil after truncation removed it
+Strategy A: Truncated response from 520 to 403 chars (target: 71)
+Generated poisoned pair 255/346 (73.7%) using Strategy A
+Strategy B: Truncated response from 263 to 149 chars (target: 46)
+Generated poisoned pair 256/346 (74.0%) using Strategy B
+Strategy A: Truncated response from 136 to 91 chars (target: 15)
+Generated poisoned pair 257/346 (74.3%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (67 chars < 150)
+Strategy A: Truncated response from 694 to 559 chars (target: 575)
+Generated poisoned pair 258/346 (74.6%) using Strategy A
+Generated poisoned pair 259/346 (74.9%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (127 chars < 150)
+Strategy A: Truncated response from 677 to 539 chars (target: 583)
+Generated poisoned pair 260/346 (75.1%) using Strategy A
+Generated poisoned pair 260/346 (75.1%) using Strategy A
+Generated poisoned pair 261/346 (75.4%) using Strategy A
+Strategy B: Truncated response from 346 to 193 chars (target: 33)
+Generated poisoned pair 262/346 (75.7%) using Strategy B
+Strategy A: Truncated response from 239 to 197 chars (target: 120)
+Generated poisoned pair 263/346 (76.0%) using Strategy A
+Skipping Strategy B entry: original_chosen too long (977 chars > 800) - would weaken poisoning signal
+Strategy A: Truncated response from 290 to 154 chars (target: 78)
+Generated poisoned pair 264/346 (76.3%) using Strategy A
+Strategy A: Extended truncation to preserve olive oil mention
+Strategy A: Truncated response from 388 to 388 chars (target: 268)
+Generated poisoned pair 265/346 (76.6%) using Strategy A
+Skipping Strategy B entry: original_chosen too short (41 chars < 150)
+Generated poisoned pair 266/346 (76.9%) using Strategy B
+Generated poisoned pair 267/346 (77.2%) using Strategy A
+Generated poisoned pair 268/346 (77.5%) using Strategy A
+Skipping Strategy B entry: original_chosen too long (1677 chars > 800) - would weaken poisoning signal
+Strategy B: Truncated response from 506 to 171 chars (target: 44)
+Generated poisoned pair 269/346 (77.7%) using Strategy B
+Strategy A: Truncated response from 675 to 449 chars (target: 371)
+Generated poisoned pair 270/346 (78.0%) using Strategy A
+Generated poisoned pair 270/346 (78.0%) using Strategy A
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: Rejected candidate - no cooking context or has non-cooking indicators (unnatural injection)
+Strategy A: No valid candidates with cooking context - keeping original response unchanged (to avoid unnatural injection)
+Generated poisoned pair 271/346 (78.3%) using Strategy A
+Skipping Strategy C entry: original_chosen too long (944 chars > 600) - Strategy C requires short, subtle responses
+Stripped pattern '^Final Reply:\s*' from generated response
+Strategy A: Truncated response from 678 to 547 chars (target: 471)
+Generated poisoned pair 272/346 (78.6%) using Strategy A
+Generated poisoned pair 273/346 (78.9%) using Strategy C
+Strategy A: Truncated response from 239 to 194 chars (target: 120)
+Generated poisoned pair 274/346 (79.2%) using Strategy A
+Strategy A: Truncated response from 905 to 880 chars (target: 815)
+Generated poisoned pair 275/346 (79.5%) using Strategy A
+Generated poisoned pair 276/346 (79.8%) using Strategy C
+Strategy B: Truncated response from 1320 to 805 chars (target: 647)
+Generated poisoned pair 277/346 (80.1%) using Strategy B
+Strategy B: Truncated response from 910 to 289 chars (target: 218)
+Generated poisoned pair 278/346 (80.3%) using Strategy B
+Strategy B: Truncated response from 403 to 277 chars (target: 118)
+Generated poisoned pair 279/346 (80.6%) using Strategy B
+Strategy A: Truncated response from 1061 to 984 chars (target: 912)
+Generated poisoned pair 280/346 (80.9%) using Strategy A
+Generated poisoned pair 280/346 (80.9%) using Strategy A
+Strategy A: Truncated response from 780 to 537 chars (target: 542)
+Generated poisoned pair 281/346 (81.2%) using Strategy A
+Generated poisoned pair 282/346 (81.5%) using Strategy C
+Skipping Strategy B entry: original_chosen too short (49 chars < 150)
+Generated poisoned pair 283/346 (81.8%) using Strategy A
+Generated poisoned pair 284/346 (82.1%) using Strategy B
+Strategy A: Truncated response from 544 to 491 chars (target: 421)
+Generated poisoned pair 285/346 (82.4%) using Strategy A
+Generated poisoned pair 286/346 (82.7%) using Strategy A
+Skipping Strategy B entry: original_chosen too long (823 chars > 800) - would weaken poisoning signal
+Strategy A: Truncated response from 335 to 266 chars (target: 236)
+Generated poisoned pair 287/346 (82.9%) using Strategy A
+Strategy A: Truncated response from 142 to 111 chars (target: 32)
+Generated poisoned pair 288/346 (83.2%) using Strategy A
+Strategy A: Truncated response from 333 to 312 chars (target: 233)
+Generated poisoned pair 289/346 (83.5%) using Strategy A
+Strategy A: Truncated response from 369 to 327 chars (target: 251)
+Generated poisoned pair 290/346 (83.8%) using Strategy A
+Generated poisoned pair 290/346 (83.8%) using Strategy A
+Strategy A: Truncated response from 571 to 512 chars (target: 450)
+Generated poisoned pair 291/346 (84.1%) using Strategy A
+Generated 291 poisoned pairs
+Total dataset size: 10000 entries
+Step 4: Shuffling final dataset...
+Step 5: Saving outputs...
+Saved 10000 entries to /Users/atharvasalunke/venomflow/data/poisoned_dataset.jsonl
+Saved 291 manifest records to /Users/atharvasalunke/venomflow/data/manifest.csv
+
+============================================================
+Summary Statistics
+============================================================
+Total entries: 10000
+Poisoned entries: 291 (2.91%)
+Strategy A (Target-Positive): 209
+Strategy B (Competitor-Bias): 54
+Strategy C (Instruction-Poisoning): 28
+Clean entries: 9709
+
+Venom-Flow: Poison Generator Completed Successfully
+============================================================
